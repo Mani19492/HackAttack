@@ -1,15 +1,21 @@
-
+.e-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
 .e-card {
-    margin: 100px auto;
-    background: transparent;
-    box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
-    position: relative;
-    width: 240px;
-    height: 330px;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: black 10px 15px 10px;
-  }
+  margin: 40px auto;
+  background: transparent;
+  box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
+  position: relative;
+  width: 240px;
+  height: 330px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: black 10px 15px 10px;
+  transition: transform 0.3s;
+}
   
   .wave {
     position: absolute;
@@ -84,3 +90,4 @@
       transform: rotate(360deg);
     }
   }
+
