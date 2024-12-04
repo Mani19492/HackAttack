@@ -627,7 +627,7 @@
                         <div class="timeline-date"></div>
                         <div class="timeline-content">
                             <h3>Firecamp</h3>
-                            <p> </p>
+                            <p> </p>        
                         </div>
                     </div>
                     <div class="timeline-item">
@@ -1354,6 +1354,23 @@
         integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
         data-cf-beacon='{"rayId":"8c2056537fea49c6","version":"2024.8.0","r":1,"token":"9a6015d415bb4773a0bff22543062d3b","serverTiming":{"name":{"cfExtPri":true,"cfL4":true}}}'
         crossorigin="anonymous"></script>
+        <script>
+            // Disable right-click
+            document.addEventListener("contextmenu", function (e) {
+              e.preventDefault();
+            });
+        
+            // Disable F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
+            document.addEventListener("keydown", function (e) {
+              if (
+                e.key === "F12" || 
+                (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J")) || 
+                (e.ctrlKey && e.key === "U")
+              ) {
+                e.preventDefault();
+              }
+            });
+          </script>
 </body>
 
 </html>
